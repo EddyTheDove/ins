@@ -1,0 +1,295 @@
+/*HOME SLIDER*/
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 3px;
+    background-color: #f60;
+    border-color: #f60;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 { 
+    font-size: 4em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}
+
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;font-weight: 100;}
+.btn.btn-hero {
+    color: #f5f5f5;
+    background-color: transparent;
+    border-color: #fff;
+    outline: none;
+    margin-top:50px;
+    font-size:20px;
+    text-transform: uppercase;
+    border-radius:0;
+    -webkit-transition:all 0.5s;-moz-transition:all 0.5s;-ms-transition:all 0.5s;-o-transition:all 0.5s;transition: all 0.5s;
+}
+
+.btn.btn-hero:hover,
+.btn.btn-hero:focus{
+    background-color: #f60;
+    border:1px solid #f60;
+    
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PARALLAX */ 
+#slide3{
+	background-image:url(../../images/full/slider/parallax-slide4.jpg);
+	color:#fff;
+    text-align:center;
+    margin:0px auto;
+    font-size: 20px;
+    min-height: 400px;
+}
+#slide2{
+	background-image:url(../../images/full/slider/parallax-slide1.jpg);
+	background-color:#f68f67;
+	color:#fff;
+    text-align:center;
+    margin:40px auto;
+    font-size: 20px;
+}
+#slide1{
+	background-image:url(../../images/full/slider/parallax-slide2.jpg);
+	background-color:#f68f67;
+	color:#fff;
+    text-align:center;
+    margin:10px auto;
+    font-size: 20px;
+}
+.slide h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height:1;
+	color:#ffffff;
+	font-weight: 700;
+    
+}
+.slide h3 {
+	
+    font-size: 3em;
+	color: #ffffff;
+	line-height: 1;
+	padding-bottom:20px;
+	font-weight: 200;
+    border:none;
+    z-index: 2;
+}
+.slide{
+	background-attachment: fixed;
+    background-size:cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+	width:100%;
+	height:auto;
+	position: relative;
+    font-family:Lato, 'Century Gothic', sans-serif !important;
+}
+
+
+
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+
+/* FEEDBACK */
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+#quote-carousel .carousel-control{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+#quote-carousel .carousel-control.left{
+  left: -12px;
+}
+#quote-carousel .carousel-control.right{
+  right: -12px !important;
+}
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active{
+  background: #333333;
+}
+#quote-carousel img{
+  width: 250px;
+  height: 100px
+}
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+.item blockquote img {
+    margin-bottom: 10px;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media only screen and (max-width: 640px){
+    .hero h1 { font-size: 3em; } 
+    .slide h3 {
+        font-size: 2em;
+        line-height: 1;
+        padding-bottom:20px;
+    }
+}
+

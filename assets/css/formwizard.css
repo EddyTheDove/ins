@@ -1,0 +1,218 @@
+
+/***** 7.1 FORM WIZARD *****/
+.contentpanel-wizard{
+    margin-top:40px;
+}
+.contentpanel-wizard .tab-content{
+    margin:20px 0;
+}
+.nav-wizard {
+    background-color: #ddd;
+    margin-bottom: 15px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.nav-wizard > li {
+    position: relative;
+    margin-right: -2px;
+}
+
+.nav-wizard > li > a {
+    color: #666;
+}
+
+.nav-wizard > li > a {
+    position: relative;
+    padding-left: 30px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.nav-wizard > li > a:after {
+    border-left: 19px solid #ddd;
+    border-top: 19px solid rgba(0,0,0,0);
+    border-bottom: 19px solid rgba(0,0,0,0);
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -19px;
+    z-index: 10;
+}
+
+.nav-wizard > li > a:before {
+    border-left: 20px solid #fff;
+    border-top: 20px solid rgba(0,0,0,0);
+    border-bottom: 20px solid rgba(0,0,0,0);
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    right: -20px;
+    z-index: 5;
+}
+
+.nav-wizard > li > a:hover,
+.nav-wizard > li > a:active,
+.nav-wizard > li > a:focus {
+    background-color: #ccc;
+}
+
+.nav-wizard > li > a:hover:after,
+.nav-wizard > li > a:active:after,
+.nav-wizard > li > a:focus:after {
+    border-left-color: #ccc;
+}
+
+.nav-wizard > li:first-child > a {
+    padding-left: 15px;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+.nav-wizard > li:last-child > a {
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.nav-wizard > li:last-child > a:after,
+.nav-wizard > li:last-child > a:before {
+    display: none;
+}
+
+.nav-wizard > li.active a,
+.nav-wizard > li.active a:hover,
+.nav-wizard > li.active a:focus,
+.nav-wizard > li.active a:active {
+    background-color: #f60;
+    color: #fff;
+}
+
+.nav-wizard > li.active a:after {
+    border-left-color: #f60;
+}
+
+.nav-wizard > li.done a {
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-wizard > li.done a:after {
+    border-left-color: #333;
+}
+
+.panel-wizard {
+    margin-bottom: 20px;
+}
+
+.panel-wizard .tab-content {
+    border: px solid #ddd;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 0;
+}
+
+.panel-wizard .wizard {
+    margin: 0;
+    background-color: #fcfcfc;
+    padding: 15px;
+    border: 1px solid #ddd;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+
+.panel-wizard .wizard:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.panel-wizard .progress {
+    margin-bottom: 5px;
+}
+
+.nav-wizard-success > li.done > a {
+    background-color: #5cb85c;
+}
+
+.nav-wizard-success > li.done > a:after {
+    border-left-color: #5cb85c;
+}
+
+.nav-wizard-warning > li.done > a {
+    background-color: #f0ad4e;
+}
+
+.nav-wizard-warning > li.done > a:after {
+    border-left-color: #f0ad4e;
+}
+
+.nav-wizard-danger > li.done > a {
+    background-color: #d9534f;
+}
+
+.nav-wizard-danger > li.done > a:after {
+    border-left-color: #d9534f;
+}
+
+.nav-wizard-info > li.done > a {
+    background-color: #5bc0de;
+}
+
+.nav-wizard-info > li.done > a:after {
+    border-left-color: #5bc0de;
+}
+.errorForm label {
+    display: block;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    color: #a94442;
+    padding: 5px 10px;
+    display: block;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contentpanel-wizard .row .col-md-6 {
+        float: none;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-wizard {
+        background: none;    
+    }
+    
+    .nav-wizard > li {
+        margin: 0 !important;
+    }
+    
+    .nav-wizard > li > a,
+    .nav-wizard > li:first-child > a,
+    .nav-wizard > li:last-child > a {
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        margin-bottom: 1px;
+        text-align: left;
+        padding-left:40px;
+    }
+    
+    .nav-wizard > li > a:before,
+    .nav-wizard > li > a:after {
+        display: none;
+    }
+
+}
